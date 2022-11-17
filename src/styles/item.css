@@ -1,0 +1,103 @@
+.item-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .item-container {
+    grid-template-columns: 1fr ;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  width: var(--small-width);
+  height: 200px;
+  position: relative;
+  background-color: transparent;
+  background-color: var(--vanilla);
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+@media screen and (min-width: 600px) {
+  .item {
+    width: 450px;
+  }
+}
+
+.item h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; 
+  font-family: constantine;
+}
+
+@media screen and (min-width: 600px) {
+  .item h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+}
+
+.item p {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: var(--ruby);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Source Sans Pro", serif;
+}
+
+.item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+}
+
+.tag-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--lace);
+}
+
+.tag {
+  background-color: var(--lemon);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-family: constantine;
+}
+
+.tag:first-child {
+  background-color: var(--egyptian);
+  color: #ffffff;
+}

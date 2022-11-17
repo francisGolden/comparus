@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+@font-face {
+  font-family: constantine;
+  src: url("../../public/constantine.ttf");
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--lace);
+  font-family: "Source Sans Pro", sans-serif;
+  color: #e3e3e3;
+  --amaranth: #d32929;
+  --lemon: #facd1e;
+  --lace: #fff5e6;
+  --dutch: #e5dbb7;
+  --vanilla: #cac198;
+  --ruby: #7f2122;
+  --egyptian: #1434A4;
+  --small-width: 350px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container h1 {
+  padding: 0;
+  font-size: 3rem;
+  margin: 0;
+  color: var(--amaranth);
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--ruby);
+  font-family: constantine;
+}
+
+@media screen and (min-width: 600px) {
+  .image-container h1 {
+    font-size: 4rem;
+  }
+}
+
+.roman {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 2px solid var(--vanilla);
+}
+
+@media screen and (min-width: 600px) {
+  .roman {
+    width: 250px;
+    height: 250px;
+  }
+}
