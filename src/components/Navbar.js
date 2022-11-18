@@ -4,11 +4,11 @@ import "../styles/navbar.css"
 const Navbar = () => {
   return (
     <nav className="navbar-container">
-      <ul className="navbar">
+      {/* <ul className="navbar">
         <li>List</li>
         <li>Blog</li>
         
-      </ul>
+      </ul> */}
       
     </nav>
   );

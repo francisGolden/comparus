@@ -6,31 +6,31 @@ const ListItem = ({ item }) => {
 
   return (
     <div className="item">
-      <div className="item-content">
-        <div className="item-head">
-          <h2>
-            <a href={item.attributes.link} rel="noreferrer" target="blank">
-              {item.attributes.title}
-            </a>
-          </h2>
-          <div className="tag-container">
-            {item.attributes.types.data[0] && (
-              <span className="tag">
-                {item.attributes.types.data[0].attributes.name}
-              </span>
-            )}
+      <div className="item-head">
+        <a className="item-title" href={item.attributes.link} rel="noreferrer" target="blank">
+          {item.attributes.title}
+        </a>
+        <div className="tag-container">
+          {item.attributes.types.data[0] && (
             <span className="tag">
-              {item.attributes.categories.data[0].attributes.name}
+              {item.attributes.types.data[0].attributes.name}
             </span>
-          </div>
-        </div>
-        <div className="item-description">
-          <p>{item.attributes.description}</p>
-          {item.attributes.image && (
-            <img src={item.attributes.image} alt={item.attributes.title}></img>
           )}
+          <span className="tag">
+            {item.attributes.categories.data[0].attributes.name}
+          </span>
         </div>
       </div>
+
+      <div className="item-bottom">
+        <p className="item-description">{item.attributes.description}</p>
+        {item.attributes.image ? (
+          <img src={item.attributes.image} alt={item.attributes.title}></img>
+        ) : (
+          <img src="roman.png" alt={item.attributes.title}></img>
+        )}
+      </div>
+
     </div>
   );
 };

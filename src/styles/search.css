@@ -109,7 +109,7 @@ form input::placeholder {
 #category {
   position: absolute;
   background-color: var(--dutch);
-  z-index: 4;
+  z-index: 10;
   display: flex;
   flex-direction: column;
 
@@ -130,7 +130,7 @@ form input::placeholder {
 #type {
   position: absolute;
   background-color: var(--dutch);
-  z-index: 4;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   color: #233142;
