@@ -16,8 +16,8 @@ const DropDown = ({ name, items, checked, setChecked }) => {
 
 
   return (
-    <div className="checkbox-container" ref={ref} key={name}>
-      <button
+    <div className="checkbox-container"  ref={ref} key={name}>
+      <button style={isComponentVisible ? {border: "2px solid #facd1e"}:null}
         onClick={() => {
           setIsComponentVisible(!isComponentVisible);
         }}

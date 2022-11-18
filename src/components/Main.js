@@ -85,6 +85,7 @@ const Main = () => {
         typeChecked={typeChecked}
         setCatChecked={setCatChecked}
         setTypeChecked={setTypeChecked}
+
       />
       <div className="select-container">
         <DropDown
