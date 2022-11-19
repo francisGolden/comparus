@@ -5,6 +5,7 @@ import Search from "./Search";
 import ListItem from "./ListItem";
 import DropDown from "./shared/DropDown";
 import "../styles/main.css";
+import "../styles/item.css";
 
 const Main = () => {
   const { documents, types, categories } = useContext(DataContext);
@@ -70,7 +71,7 @@ const Main = () => {
   console.log(filtered)
 
   return (
-    <div>
+    <div className="main-container">
       <div className="head-container">
       <img className="roman" src="roman.png" alt="godzilla" />
         <h1>COMPARUS</h1>
