@@ -71,10 +71,10 @@ const Main = () => {
 
   return (
     <div>
-      <div className="image-container">
+      <div className="head-container">
       <img className="roman" src="roman.png" alt="godzilla" />
         <h1>COMPARUS</h1>
-        
+        <h3>The best comparison and aggregation tools of the web</h3>
       </div>
 
       <Search

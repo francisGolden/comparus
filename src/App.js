@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         
         <Main />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </DataProvider>
   );
